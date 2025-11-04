@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0f123f;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.todo-box {
+    background-color: #161b4a;
+    padding: 30px;
+    border-radius: 20px;
+    width: 500px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h2 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.header p {
+    color: #fff;
+    font-size: 14px;
+}
+
+
+.input-box {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.input-box input {
+    background: #1b2261;
+    border: none;
+    outline: none;
+    padding: 12px;
+    border-radius: 5px;
+    color: white;
+    width: 100%;
+}
+
+.input-box button {
+    background: #4d5eff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.input-box button:hover {
+    background: #23d5ec;
+}
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task {
+    background: #1b2261;
+    padding: 12px 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-list h3 {
+    color: #23d5ec;
+}
+
+.icons i {
+    margin-left: 5px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.icons i:hover {
+    opacity: 1;
+    color: #23d5ec;
+}
+
+.line-through {
+    text-decoration: line-through;
+    color: #888;
+    background: #1b2261;
+    padding: 12px 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
