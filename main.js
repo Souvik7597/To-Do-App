@@ -27,7 +27,8 @@ function check(title, array) {
 
 function add() {
     const title = input.value.trim();
-    if (check(title, array)) {
+    if(!check(title, array)) return;
+    if (editIndex === null) {
         array.push({ title, completed: false });
     } else {
         array[editIndex].title = title;
@@ -50,6 +51,7 @@ function doneTask(i) {
 
 function editTask(i) {
     input.value = array[i].title;
+    editIndex = i;
     button.innerHTML = `<i class="fa-solid fa-check"></i>`;
 };
 
